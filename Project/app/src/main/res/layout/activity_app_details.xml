@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar with a back button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="App Details"
+        android:theme="@style/MyThemeOverlay_Toolbar"
+        android:textAlignment="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- App Icon -->
+            <ImageView
+                android:id="@+id/appIconView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher_foreground"/>
+
+
+            <TextView
+                android:id="@+id/appNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="appName"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+
+            <!-- Total and Today's Usage -->
+            <TextView
+                android:id="@+id/todayUsageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Usage: 00:00:00"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/totalUsageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's Usage: 00:00:00"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last 7 Days Usage (Minutes)"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp" />
+
+            <!-- Chart for previous days -->
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/usageChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

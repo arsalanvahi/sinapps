@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Beautiful Mind</string>
+    <string name="no_social_apps_data_available">No Social Apps Data Available</string>
+    <string name="no_social_apps_usage_found">No Social Apps Usage Found</string>
+    <string name="social_apps_usage">Social Apps Usage</string>
+    <string name="grant_usage_access_permission">Grant Usage Access Permission</string>
+
+
+    <string name="app_details_activity_name">Details</string>
+    <string name="today_usage">Today\'s Usage:</string>
+    <string name="total_usage">Total Usage:</string>
+    <string name="last_7_days_usage">Last 7 Days Usage (Minutes)</string>
+
+    <string name="not_determined">Not Determined</string>
+
+    <string name="other_apps_activity_name">Other Apps Usage</string>
+
+
+
+</resources>
